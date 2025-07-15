@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.flower {
+  position: absolute;
+  z-index: 1;
+  opacity: 0.35; /* Make it more visible */
+  pointer-events: none;
+  max-width: 180px;
+  filter: drop-shadow(0 0 10px rgba(255, 192, 203, 0.5)); /* Soft pink glow */
+}
+
+.flower-top-left {
+  top: 10px;
+  left: 10px;
+}
+
+.flower-bottom-right {
+  bottom: 10px;
+  right: 10px;
+}
+
+
+/* Contact Form Section */
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  position: relative;
+  z-index: 5;
+}
+
+/* Glass Box */
+.contact-box {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(16px);
+  padding: 40px 35px;
+  border-radius: 18px;
+  width: 100%;
+  max-width: 520px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.12);
+  color: #333;
+  z-index: 10;
+}
+
+.contact-box h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ff4e7b;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+
+/* Inputs with Icons */
+.input-group {
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.input-group i {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+  color: #999;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px 15px 14px 45px;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 10px;
+  color: #222;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 10px #ff6f91;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+/* Button Styling */
+.send-btn {
+  width: 100%;
+  background: #ff6f91;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.send-btn:hover {
+  background: #ff4e7b;
+  transform: scale(1.03);
+  box-shadow: 0 0 15px #ff85a2;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .contact-box {
+    max-width: 600px;
+    padding: 35px 25px;
+  }
+
+  .contact-box h2 {
+    font-size: 2.4rem;
+  }
+
+  .flower {
+    max-width: 140px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-wrapper {
+    padding: 50px 15px;
+  }
+
+  .contact-box {
+    max-width: 500px;
+    padding: 30px 20px;
+  }
+
+  .contact-box h2 {
+    font-size: 2.2rem;
+  }
+
+  .flower {
+    max-width: 120px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-box {
+    max-width: 95%;
+    padding: 25px 15px;
+  }
+
+  .contact-box h2 {
+    font-size: 1.9rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.85rem;
+    padding-left: 40px;
+  }
+
+  .input-group i {
+    left: 12px;
+    font-size: 0.9rem;
+  }
+
+  .flower {
+    max-width: 100px;
+  }
+
+  .send-btn {
+    font-size: 0.95rem;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  .contact-box h2 {
+    font-size: 1.7rem;
+  }
+
+  .flower {
+    max-width: 80px;
+  }
+
+  .send-btn {
+    font-size: 0.9rem;
+  }
+}
+
+
