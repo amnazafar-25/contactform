@@ -16,7 +16,7 @@ A responsive and beautifully styled contact form built using HTML, CSS, and Java
 ## 🎯 Key Features
 
 - ✅ Responsive layout for all screen sizes  
-- 🖼️ Custom illustration (`img-001.avif` or your chosen image)  
+- 🖼️ Custom illustration (`flower.png`)  
 - 📬 Clean and simple form fields: name, email, message  
 - 🎨 Stylish submit button with hover effects  
 - 📱 Mobile-friendly design  
