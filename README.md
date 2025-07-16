@@ -12,7 +12,6 @@ A responsive and beautifully styled contact form built using HTML, CSS, and Java
 
 - HTML5  
 - CSS3 (Form styling, layout, and responsiveness)  
-- JavaScript (Form behavior and optional enhancements)
 
 ## 🎯 Key Features
 
